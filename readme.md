@@ -2,7 +2,7 @@
 
 Este ejemplo no explica sobre el desarrollo de aplicaciones o API con Python Django. Si desea aprender en detalle sobre Django, [Graphene](https://docs.graphene-python.org/projects/django/en/latest/) y otros temas relacionados con el uso para principiantes en este tipo de tecnologías, diríjase a la documentación de cada una para aprender sobre su configuración básica, sin embargo, puede ver el código fuente completo del ejemplo en [**GitHub**](https://github.com/SmartEmotions/AWSLambda-Python), en el archivo requirementes.txt se encuentras las librerías utilizadas.
 
-#### [Ver Artículo Completo en Coneccio](https://coneccio.com/t/serverless-en-aws-lamda-con-python/39)
+#### [Ver Artículo Completo en Coneccio](https://coneccio.com/t/serverless-en-aws-lambda-con-python/39)
 
 #### [Ver demo](https://osjfw3bchj.execute-api.us-east-1.amazonaws.com/dev/ingredients?query=query%7B%0A%20%20allCategories%7B%0A%20%20%20%20name%2C%0A%20%20%20%20ingredients%7B%0A%20%20%20%20%20%20name%2C%0A%20%20%20%20%20%20notes%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D)
 
