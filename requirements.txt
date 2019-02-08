@@ -1,0 +1,6 @@
+awscli
+boto3
+django
+graphene_django
+zappa
+django-cors-headers
