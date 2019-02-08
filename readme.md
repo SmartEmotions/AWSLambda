@@ -6,7 +6,11 @@ Este ejemplo no explica sobre el desarrollo de aplicaciones o API con Python Dja
 
 #### [Ver demo](https://osjfw3bchj.execute-api.us-east-1.amazonaws.com/dev/ingredients?query=query%7B%0A%20%20allCategories%7B%0A%20%20%20%20name%2C%0A%20%20%20%20ingredients%7B%0A%20%20%20%20%20%20name%2C%0A%20%20%20%20%20%20notes%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D)
 
-El ejemplo realiza el modelamiento de una API para Ingredientes y categorías, los modelos se verían como en la imagen, una relación de uno a varios entre categoría e ingrediente en esa dirección.![](/assets/ER AWS Serverless Example.png)Con los modelos se obtendrá en [GraphQL ](https://graphql.org/learn/)los servicios implementados, en el ejemplo están las consultas para obtener las listas tal como se indica en la imagen de ingredientes y categorías, diríjase a [Graphene](https://docs.graphene-python.org/projects/django/en/latest/) si desea aprender más sobre cómo usar esta tecnología.
+El ejemplo realiza el modelamiento de una API para Ingredientes y categorías, los modelos se verían como en la imagen, una relación de uno a varios entre categoría e ingrediente en esa dirección.
+
+![Modelos](https://coneccio.com/uploads/default/original/1X/7d2f592300af493000fee893bfa1de41c74a5e5a.png)
+
+Con los modelos se obtendrá en [GraphQL ](https://graphql.org/learn/)los servicios implementados, en el ejemplo están las consultas para obtener las listas tal como se indica en la imagen de ingredientes y categorías, diríjase a [Graphene](https://docs.graphene-python.org/projects/django/en/latest/) si desea aprender más sobre cómo usar esta tecnología.
 
 ###### Consulta de Categorías e Ingredientes
 
