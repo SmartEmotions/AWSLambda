@@ -1,18 +1,16 @@
 # AWS Serverless Con DJango
 
-Este ejemplo implementa una API con Graphene de GraphQL en Python con DJango.
+Este ejemplo no explica sobre el desarrollo de aplicaciones o API con Python Django. Si desea aprender en detalle sobre Django, [Graphene](https://docs.graphene-python.org/projects/django/en/latest/) y otros temas relacionados con el uso para principiantes en este tipo de tecnologías, diríjase a la documentación de cada una para aprender sobre su configuración básica, sin embargo, puede ver el código fuente completo del ejemplo en [**GitHub**](https://github.com/SmartEmotions/AWSLambda-Python), en el archivo requirementes.txt se encuentras las librerías utilizadas.
 
-### [Ver demo en línea](https://osjfw3bchj.execute-api.us-east-1.amazonaws.com/dev/ingredients)
+#### [Ver Artículo Completo en Coneccio](https://coneccio.com/t/serverless-en-aws-lamda-con-python/39)
 
-**NOTA:** Este ejemplo no explica sobre el desarrollo de aplicaciones o API con Python Django. Si desea aprender en detalle sobre Django, [Graphene](https://docs.graphene-python.org/projects/django/en/latest/) y otros temas relacionados con el uso para principiantes en este tipo de tecnologías, diríjase a la documentación de cada una para aprender sobre su configuración básica, sin embargo, puede ver el código fuente completo del ejemplo en GitHub, en el archivo requirementes.txt se encuentras las librerías utilizadas.
+#### [Ver demo](https://osjfw3bchj.execute-api.us-east-1.amazonaws.com/dev/ingredients?query=query%7B%0A%20%20allCategories%7B%0A%20%20%20%20name%2C%0A%20%20%20%20ingredients%7B%0A%20%20%20%20%20%20name%2C%0A%20%20%20%20%20%20notes%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D)
 
-> El ejemplo realiza el modelamiento de una API para Ingredientes y categorías, los modelos se verían como en la imagen, una relación de uno a varios entre categoría e ingrediente en esa dirección.![](/assets/ER AWS Serverless Example.png)
+El ejemplo realiza el modelamiento de una API para Ingredientes y categorías, los modelos se verían como en la imagen, una relación de uno a varios entre categoría e ingrediente en esa dirección.![](/assets/ER AWS Serverless Example.png)Con los modelos se obtendrá en [GraphQL ](https://graphql.org/learn/)los servicios implementados, en el ejemplo están las consultas para obtener las listas tal como se indica en la imagen de ingredientes y categorías, diríjase a [Graphene](https://docs.graphene-python.org/projects/django/en/latest/) si desea aprender más sobre cómo usar esta tecnología.
 
-Con los modelos se obtendrá en [GraphQL ](https://graphql.org/learn/)los servicios implementados, en el ejemplo estan las consultas para obtener las listas tal como se indica en la imagen de ingredientes y categorías, diríjase a [Graphene](https://docs.graphene-python.org/projects/django/en/latest/) si desea aprender más sobre cómo usar esta tecnología.
+###### Consulta de Categorías e Ingredientes
 
-###### Consulta de Categorias e Ingredientes
-
-```Jsongit 
+```
 query{
   allCategories{
     name,
@@ -24,7 +22,7 @@ query{
 }
 ```
 
-###### Respuesta de Categorias e Ingredientes
+###### Respuesta de Categorías e Ingredientes
 
 ```Json
 {
@@ -63,13 +61,13 @@ query{
 
 ## Zappa
 
-Es una libreria de Python para el desarrollo rapido de aplicaciones en Serverless de AWS Lambda. Con el proyecto base para iniciar, lo primero es configurar los accesos de Amazon Web Services.
+Es una librería de Python para el desarrollo rápido de aplicaciones en Serverless de AWS Lambda. Con el proyecto base para iniciar, lo primero es configurar los accesos de Amazon Web Services.
 
 ```
 aws configure
 ```
 
-Configuré las llaves obtenidas de AWS en IAM, recuerde, las llaves deben tener los permisos anteriormente mencionados en este artículo, este paso se recomienda hacer uso de entornos virtuales para Python de ese modo las llaves se guardaran en un segmento aislado del sistema operativo, los parametros solicitados son el AWS\_KEY\_ID_ y el _AWS\_SECRET\_ID.
+Configuré las llaves obtenidas de AWS en IAM, recuerde, las llaves deben tener los permisos anteriormente mencionados en este artículo, este paso se recomienda hacer uso de entornos virtuales para Python de ese modo las llaves se guardarán en un segmento aislado del sistema operativo, los parámetros solicitados son el AWS\_KEY\_ID\_ y el \_AWS\_SECRET\_ID.
 
 ```
 zappa init
@@ -97,4 +95,3 @@ El primer despliegue realiza la configuración iniciale en AWS Lambda,  por lo t
 Cuando se realicen actualizaciónes solo agregue.
 
 `zappa update`
-
